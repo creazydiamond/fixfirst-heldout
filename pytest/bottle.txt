@@ -1,0 +1,321 @@
+# Plain pytest output for the held-out check (scripts/heldout.py pytest)
+# project: bottle (bottlepy/bottle 0.12.19)
+# command: python -m pytest, in <home>\heldout-projects\bottle, environment activated
+# python: 3.12.7
+# run 1: exit code 2, 2.0 s, 3 warnings, 22 errors
+# run 2: exit code 2, 1.5 s, 1 warning, 22 errors
+# date: 2026-09-29T21:26:17+08:00
+
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-9.1.1, pluggy-1.6.0
+rootdir: <home>\heldout-projects\bottle
+collected 0 items / 22 errors
+
+=================================== ERRORS ====================================
+_____________________ ERROR collecting test/test_auth.py ______________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_auth.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_auth.py:2: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+____________________ ERROR collecting test/test_config.py _____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_config.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_config.py:2: in <module>
+    from bottle import ConfigDict
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+__________________ ERROR collecting test/test_configdict.py ___________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_configdict.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_configdict.py:2: in <module>
+    from bottle import ConfigDict
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+_________________ ERROR collecting test/test_contextlocals.py _________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_contextlocals.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_contextlocals.py:7: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+____________________ ERROR collecting test/test_environ.py ____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_environ.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_environ.py:7: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+__________________ ERROR collecting test/test_fileupload.py ___________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_fileupload.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_fileupload.py:6: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+___________________ ERROR collecting test/test_formsdict.py ___________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_formsdict.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_formsdict.py:5: in <module>
+    from bottle import FormsDict, touni, tob
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+__________________ ERROR collecting test/test_importhook.py ___________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_importhook.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_importhook.py:4: in <module>
+    import imp
+E   ModuleNotFoundError: No module named 'imp'
+____________________ ERROR collecting test/test_jinja2.py _____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_jinja2.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_jinja2.py:3: in <module>
+    from bottle import Jinja2Template, jinja2_template, jinja2_view, touni
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+_____________________ ERROR collecting test/test_mako.py ______________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_mako.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_mako.py:2: in <module>
+    from tools import warn
+test\tools.py:2: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+_____________________ ERROR collecting test/test_mdict.py _____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_mdict.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_mdict.py:2: in <module>
+    from bottle import MultiDict, HeaderDict
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+_____________________ ERROR collecting test/test_mount.py _____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_mount.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_mount.py:1: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+_________________ ERROR collecting test/test_outputfilter.py __________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_outputfilter.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_outputfilter.py:5: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+____________________ ERROR collecting test/test_plugins.py ____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_plugins.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_plugins.py:3: in <module>
+    import tools
+test\tools.py:2: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+___________________ ERROR collecting test/test_resources.py ___________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_resources.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_resources.py:1: in <module>
+    from bottle import ResourceManager
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+_____________________ ERROR collecting test/test_route.py _____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_route.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_route.py:2: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+____________________ ERROR collecting test/test_router.py _____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_router.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_router.py:2: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+_________________ ERROR collecting test/test_securecookies.py _________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_securecookies.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_securecookies.py:4: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+___________________ ERROR collecting test/test_sendfile.py ____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_sendfile.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_sendfile.py:2: in <module>
+    from bottle import static_file, request, response, parse_date, parse_range_header, Bottle, tob
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+____________________ ERROR collecting test/test_server.py _____________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_server.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_server.py:4: in <module>
+    from tools import tob
+test\tools.py:2: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+_____________________ ERROR collecting test/test_stpl.py ______________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_stpl.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_stpl.py:3: in <module>
+    from bottle import SimpleTemplate, TemplateError, view, template, touni, tob, html_quote
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+_____________________ ERROR collecting test/test_wsgi.py ______________________
+ImportError while importing test module '<home>\heldout-projects\bottle\test\test_wsgi.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\ProgramData\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_wsgi.py:3: in <module>
+    import bottle
+bottle.py:44: in <module>
+    from inspect import getargspec
+E   ImportError: cannot import name 'getargspec' from 'inspect' (C:\ProgramData\anaconda3\Lib\inspect.py). Did you mean: 'getargs'?
+============================== warnings summary ===============================
+bottle.py:38
+  <home>\heldout-projects\bottle\bottle.py:38: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import base64, cgi, email.utils, functools, hmac, itertools, mimetypes,\
+
+test\test_server.py:53
+  <home>\heldout-projects\bottle\test\test_server.py:53: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+    if rv is 128: # Import error
+
+test\test_server.py:57
+  <home>\heldout-projects\bottle\test\test_server.py:57: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+    if rv is 3: # Port in use
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+ERROR test/test_auth.py
+ERROR test/test_config.py
+ERROR test/test_configdict.py
+ERROR test/test_contextlocals.py
+ERROR test/test_environ.py
+ERROR test/test_fileupload.py
+ERROR test/test_formsdict.py
+ERROR test/test_importhook.py
+ERROR test/test_jinja2.py
+ERROR test/test_mako.py
+ERROR test/test_mdict.py
+ERROR test/test_mount.py
+ERROR test/test_outputfilter.py
+ERROR test/test_plugins.py
+ERROR test/test_resources.py
+ERROR test/test_route.py
+ERROR test/test_router.py
+ERROR test/test_securecookies.py
+ERROR test/test_sendfile.py
+ERROR test/test_server.py
+ERROR test/test_stpl.py
+ERROR test/test_wsgi.py
+!!!!!!!!!!!!!!!!!! Interrupted: 22 errors during collection !!!!!!!!!!!!!!!!!!!
+======================= 3 warnings, 22 errors in 1.33s ========================

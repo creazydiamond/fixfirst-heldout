@@ -14,5 +14,21 @@
         "summary": "14 failed, 340 passed, 473 skipped, 100 deselected"
       }
     ]
+  },
+  "bottle": {
+    "python": "3.12.7",
+    "same_every_run": true,
+    "runs": [
+      {
+        "exit_code": 2,
+        "seconds": 2.0,
+        "summary": "3 warnings, 22 errors"
+      },
+      {
+        "exit_code": 2,
+        "seconds": 1.5,
+        "summary": "1 warning, 22 errors"
+      }
+    ]
   }
 }
