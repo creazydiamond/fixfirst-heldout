@@ -18,28 +18,23 @@
 #   commit     check out this commit instead of the release (the parent of the fix)
 #   tests_from take test files from this commit (the fix itself) ...
 #   test_files ... namely these files
-#
-# Example (remove the leading "# " to use it as a starting point):
-#
-# [[project]]
-# id = "example-cli"
-# repo = "owner/example-cli"
-# ref = "v1.2.0"
-# domain = "Command-line tools"
-# layout = "flat package, setup.py, requirements-dev.txt"
-# python = "3.12"
-# install = ["-e .", "-r requirements-dev.txt"]
-# scenario = "The documented development setup; unpinned dependencies get today's releases."
-#
-# [[project]]
-# id = "example-bugfix"
-# repo = "owner/example"
-# ref = "v2.0.1"                        # nearest release before the commit; used as the version number
-# commit = "<parent of the fix, 40 characters>"
-# tests_from = "<the fix commit>"
-# test_files = ["tests/test_parser.py"]
-# domain = "Data parsing"
-# layout = "src layout, pyproject.toml (setuptools)"
-# python = "3.12"
-# install = ["-e .", "pytest"]
-# scenario = "Code defect: the parent of the fix for issue #123, with the test that the fix added."
+
+[[project]]
+id = "dogpile-cache"
+repo = "sqlalchemy/dogpile.cache"
+ref = "rel_1_1_4"                     # the repo's tags are rel_X_Y_Z, not the bare version
+domain = "Caching"
+layout = "flat package (dogpile/, tests/), setup.cfg + setup.py; install_requires = decorator>=4.0.0, stevedore>=3.0.0; test deps in tox.ini [testenv]"
+python = "3.12"
+install = ["-e .", "pytest>=5.4.0", "Mako", "decorator>=4.0.0"]
+scenario = "按 tox.ini [testenv] 的 deps + -e . 装；依赖只写了下限没写上限，装上今天最新版（pytest 9.1.1、Mako 1.4.3、decorator 5.3.1）。没有故意少装东西。"
+
+[[project]]
+id = "bottle"
+repo = "bottlepy/bottle"
+ref = "0.12.19"
+domain = "Web Frameworks"
+layout = "single module (bottle.py) at the repo root, setup.py (py_modules), no install_requires; tests in test/, driven by test/testall.py (unittest), template tests want Mako + jinja2"
+python = "3.12"
+install = ["-e .", "pytest", "Mako", "jinja2"]
+scenario = "按 tox.ini [testenv] 的 deps（Mako、jinja2）装，另加 pytest（heldout.py 用 python -m pytest）；依赖不锁版本。pip install -e . 失败：setup.py 会 import bottle，而 bottle.py:44 无条件 from inspect import getargspec，该函数在 Python 3.11 被删——项目因此没装上。"
