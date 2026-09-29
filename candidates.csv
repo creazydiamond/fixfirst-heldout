@@ -1,7 +1,7 @@
 id,repo,ref,python,domain,found_in,tried_on,pytest_summary,root_cause_guess,kept,reason
 python-diskcache,grantjenks/python-diskcache,,3.12,Caching,awesome-python: Caching,2026-09-29,,,yes,confirm the tests need no network or paid service; PyPI name unknown - read the tag off the repo's Releases page
 hishel,karpetrosyan/hishel,,3.12,Caching,awesome-python: Caching,2026-09-29,,,yes,confirm the tests need no network or paid service
-dogpile-cache,sqlalchemy/dogpile.cache,1.1.4,3.12,Caching,awesome-python: Caching,2026-09-29,,,yes,confirm the tests need no network or paid service
+dogpile-cache,sqlalchemy/dogpile.cache,rel_1_1_4,3.12,Caching,awesome-python: Caching,2026-09-29,"14 failed, 340 passed, 473 skipped, 100 deselected; identical across 2 runs",,yes,"Kept (option b). Two layers: first a pkg_resources/setuptools compatibility failure, then timing-sensitive cache-invalidation failures -> the rest goes in later_layers. The failure classification was reached with LLM assistance during the error investigation; recorded here for transparency."
 django-cacheops,Suor/django-cacheops,6.0,3.12,Caching,awesome-python: Caching,2026-09-29,,,yes,confirm the tests need no network or paid service
 django,django/django,4.0,3.12,Web Frameworks,awesome-python: Web Frameworks,2026-09-29,,,yes,large repo (282 MB); confirm the tests need no network or paid service
 bottle,bottlepy/bottle,0.12.19,3.12,Web Frameworks,awesome-python: Web Frameworks,2026-09-29,,,yes,confirm the tests need no network or paid service

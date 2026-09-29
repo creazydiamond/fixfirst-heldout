@@ -1,0 +1,18 @@
+{
+  "dogpile-cache": {
+    "python": "3.12.7",
+    "same_every_run": true,
+    "runs": [
+      {
+        "exit_code": 1,
+        "seconds": 37.0,
+        "summary": "14 failed, 340 passed, 473 skipped, 100 deselected"
+      },
+      {
+        "exit_code": 1,
+        "seconds": 36.1,
+        "summary": "14 failed, 340 passed, 473 skipped, 100 deselected"
+      }
+    ]
+  }
+}

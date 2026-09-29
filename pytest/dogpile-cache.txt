@@ -1,0 +1,1067 @@
+# Plain pytest output for the held-out check (scripts/heldout.py pytest)
+# project: dogpile-cache (sqlalchemy/dogpile.cache rel_1_1_4)
+# command: python -m pytest, in <home>\heldout-projects\dogpile-cache, environment activated
+# python: 3.12.7
+# run 1: exit code 1, 37.0 s, 14 failed, 340 passed, 473 skipped, 100 deselected
+# run 2: exit code 1, 36.1 s, 14 failed, 340 passed, 473 skipped, 100 deselected
+# date: 2026-09-29T20:55:31+08:00
+
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-9.1.1, pluggy-1.6.0 -- <home>\heldout-projects\dogpile-cache\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: <home>\heldout-projects\dogpile-cache
+configfile: setup.cfg
+collecting ... collected 927 items / 100 deselected / 827 selected
+
+tests/cache/plugins/test_mako_cache.py::TestMakoPlugin::test_basic PASSED [  0%]
+tests/cache/plugins/test_mako_cache.py::TestMakoPlugin::test_timeout PASSED [  0%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_backend_delete PASSED [  0%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_backend_delete_nothing PASSED [  0%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_backend_get_nothing PASSED [  0%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_backend_set_get_value PASSED [  0%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_decorated_fn_functionality PASSED [  0%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_exploding_value_fn PASSED [  0%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_creator PASSED [  1%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_delete PASSED [  1%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_delete_multiple PASSED [  1%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_get_empty_multiple PASSED [  1%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_get_multiple_values PASSED [  1%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_get_nothing_multiple PASSED [  1%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_get_or_create_multi_w_should_cache_none PASSED [  1%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_get_zero_multiple_values PASSED [  1%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_is_key_locked PASSED [  2%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_set_get_nothing PASSED [  2%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_set_get_value PASSED [  2%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_set_multiple_values PASSED [  2%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_set_zero_multiple_values PASSED [  2%]
+tests/cache/test_dbm_backend.py::DBMBackendConditionTest::test_region_set_zero_multiple_values_w_decorator PASSED [  2%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_backend_delete PASSED [  2%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_backend_delete_nothing PASSED [  2%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_backend_get_nothing PASSED [  3%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_backend_set_get_value PASSED [  3%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_decorated_fn_functionality PASSED [  3%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_exploding_value_fn PASSED [  3%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_creator PASSED [  3%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_delete PASSED [  3%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_delete_multiple PASSED [  3%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_get_empty_multiple PASSED [  3%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_get_multiple_values PASSED [  3%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_get_nothing_multiple PASSED [  4%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_get_or_create_multi_w_should_cache_none PASSED [  4%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_get_zero_multiple_values PASSED [  4%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_is_key_locked PASSED [  4%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_set_get_nothing PASSED [  4%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_set_get_value PASSED [  4%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_set_multiple_values PASSED [  4%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_set_zero_multiple_values PASSED [  4%]
+tests/cache/test_dbm_backend.py::DBMBackendProxyTest::test_region_set_zero_multiple_values_w_decorator PASSED [  5%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_backend_delete PASSED [  5%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_backend_delete_nothing PASSED [  5%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_backend_get_nothing PASSED [  5%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_backend_set_get_value PASSED [  5%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_decorated_fn_functionality PASSED [  5%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_exploding_value_fn PASSED [  5%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_creator PASSED [  5%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_delete PASSED [  6%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_delete_multiple PASSED [  6%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_get_empty_multiple PASSED [  6%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_get_multiple_values PASSED [  6%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_get_nothing_multiple PASSED [  6%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_get_or_create_multi_w_should_cache_none PASSED [  6%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_get_zero_multiple_values PASSED [  6%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_is_key_locked PASSED [  6%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_set_get_nothing PASSED [  7%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_set_get_value PASSED [  7%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_set_multiple_values PASSED [  7%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_set_zero_multiple_values PASSED [  7%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_region_set_zero_multiple_values_w_decorator PASSED [  7%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_uses_deserializer PASSED [  7%]
+tests/cache/test_dbm_backend.py::DBMBackendSerializerTest::test_uses_serializer PASSED [  7%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_backend_delete PASSED [  7%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_backend_delete_nothing PASSED [  7%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_backend_get_nothing PASSED [  8%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_backend_set_get_value PASSED [  8%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_decorated_fn_functionality PASSED [  8%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_exploding_value_fn PASSED [  8%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_creator PASSED [  8%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_delete PASSED [  8%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_delete_multiple PASSED [  8%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_get_empty_multiple PASSED [  8%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_get_multiple_values PASSED [  9%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_get_nothing_multiple PASSED [  9%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_get_or_create_multi_w_should_cache_none PASSED [  9%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_get_zero_multiple_values PASSED [  9%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_is_key_locked PASSED [  9%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_set_get_nothing PASSED [  9%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_set_get_value PASSED [  9%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_set_multiple_values PASSED [  9%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_set_zero_multiple_values PASSED [ 10%]
+tests/cache/test_dbm_backend.py::DBMBackendNoLockTest::test_region_set_zero_multiple_values_w_decorator PASSED [ 10%]
+tests/cache/test_dbm_backend.py::DBMMutexConditionTest::test_mutex PASSED [ 10%]
+tests/cache/test_dbm_backend.py::DBMMutexConditionTest::test_mutex_reentrant_across_keys PASSED [ 10%]
+tests/cache/test_dbm_backend.py::DBMMutexConditionTest::test_reentrant_dogpile PASSED [ 10%]
+tests/cache/test_dbm_backend.py::DBMMutexConditionTest::test_release_assertion_key PASSED [ 10%]
+tests/cache/test_dbm_backend.py::DBMMutexConditionTest::test_release_assertion_thread PASSED [ 10%]
+tests/cache/test_dbm_backend.py::DBMMutexConditionTest::test_subclass_match PASSED [ 10%]
+tests/cache/test_decorator.py::DecoratorTest::test_decorator PASSED      [ 11%]
+tests/cache/test_decorator.py::DecoratorTest::test_decorator_custom_expire PASSED [ 11%]
+tests/cache/test_decorator.py::DecoratorTest::test_decorator_expire_callable PASSED [ 11%]
+tests/cache/test_decorator.py::DecoratorTest::test_decorator_expire_callable_zero PASSED [ 11%]
+tests/cache/test_decorator.py::DecoratorTest::test_decorator_key_generator PASSED [ 11%]
+tests/cache/test_decorator.py::DecoratorTest::test_decorator_key_generator_multi PASSED [ 11%]
+tests/cache/test_decorator.py::DecoratorTest::test_decorator_namespace PASSED [ 11%]
+tests/cache/test_decorator.py::DecoratorTest::test_explicit_expire PASSED [ 11%]
+tests/cache/test_decorator.py::DecoratorTest::test_explicit_get PASSED   [ 11%]
+tests/cache/test_decorator.py::DecoratorTest::test_explicit_get_multi PASSED [ 12%]
+tests/cache/test_decorator.py::DecoratorTest::test_explicit_refresh PASSED [ 12%]
+tests/cache/test_decorator.py::DecoratorTest::test_explicit_refresh_multi PASSED [ 12%]
+tests/cache/test_decorator.py::DecoratorTest::test_explicit_set PASSED   [ 12%]
+tests/cache/test_decorator.py::DecoratorTest::test_explicit_set_multi PASSED [ 12%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_default_keygen_kwargs_raises_value_error PASSED [ 12%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_key_isnt_unicode_bydefault PASSED [ 12%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_keygen_fn PASSED  [ 12%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_keygen_fn_namespace PASSED [ 13%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_kwarg_kegen_keygen_fn PASSED [ 13%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_kwarg_kegen_keygen_fn_all_defaults PASSED [ 13%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_kwarg_kegen_keygen_fn_with_defaults_and_positional PASSED [ 13%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_kwarg_keygen_fn_namespace PASSED [ 13%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_kwarg_kwgen_key_isnt_unicode_bydefault PASSED [ 13%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_multi_keygen_fn PASSED [ 13%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_sha1_key_mangler PASSED [ 13%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_sha1_key_mangler_bytes_py3k PASSED [ 14%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_sha1_key_mangler_unicode_py2k PASSED [ 14%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_unicode_key PASSED [ 14%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_unicode_key_by_default PASSED [ 14%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_unicode_key_by_default_kwarg_generator PASSED [ 14%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_unicode_key_kwarg_generator PASSED [ 14%]
+tests/cache/test_decorator.py::KeyGenerationTest::test_unicode_key_multi PASSED [ 14%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_cache_arg PASSED [ 14%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_cache_multi_preserve_sig PASSED [ 14%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_cache_preserve_sig PASSED [ 15%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_multi PASSED     [ 15%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_multi_asdict PASSED [ 15%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_multi_asdict_keys_missing PASSED [ 15%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_multi_asdict_keys_missing_existing_cache_fn PASSED [ 15%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_multi_namespace PASSED [ 15%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_original_fn_set PASSED [ 15%]
+tests/cache/test_decorator.py::CacheDecoratorTest::test_reentrant_call PASSED [ 15%]
+tests/cache/test_mako.py::MakoTest::test_entry_point FAILED              [ 16%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_backend_delete SKIPPED [ 16%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_backend_delete_nothing SKIPPED [ 16%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_backend_get_nothing SKIPPED [ 16%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_backend_set_get_value SKIPPED [ 16%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_decorated_fn_functionality SKIPPED [ 16%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_exploding_value_fn SKIPPED [ 16%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_creator SKIPPED [ 16%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_delete SKIPPED [ 17%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_delete_multiple SKIPPED [ 17%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_get_empty_multiple SKIPPED [ 17%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_get_multiple_values SKIPPED [ 17%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_get_nothing_multiple SKIPPED [ 17%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 17%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_get_zero_multiple_values SKIPPED [ 17%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_is_key_locked SKIPPED [ 17%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_set_get_nothing SKIPPED [ 18%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_set_get_value SKIPPED [ 18%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_set_multiple_values SKIPPED [ 18%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_set_zero_multiple_values SKIPPED [ 18%]
+tests/cache/test_memcached_backend.py::PylibmcTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 18%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_backend_delete SKIPPED [ 18%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_backend_delete_nothing SKIPPED [ 18%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_backend_get_nothing SKIPPED [ 18%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_backend_set_get_value SKIPPED [ 18%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_decorated_fn_functionality SKIPPED [ 19%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_exploding_value_fn SKIPPED [ 19%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_creator SKIPPED [ 19%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_delete SKIPPED [ 19%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_delete_multiple SKIPPED [ 19%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_get_empty_multiple SKIPPED [ 19%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_get_multiple_values SKIPPED [ 19%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_get_nothing_multiple SKIPPED [ 19%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 20%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_get_zero_multiple_values SKIPPED [ 20%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_is_key_locked SKIPPED [ 20%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_set_get_nothing SKIPPED [ 20%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_set_get_value SKIPPED [ 20%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_set_multiple_values SKIPPED [ 20%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_set_zero_multiple_values SKIPPED [ 20%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 20%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedMutexTest::test_mutex SKIPPED [ 21%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedMutexTest::test_mutex_reentrant_across_keys SKIPPED [ 21%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedMutexTest::test_reentrant_dogpile SKIPPED [ 21%]
+tests/cache/test_memcached_backend.py::PylibmcDistributedMutexTest::test_subclass_match SKIPPED [ 21%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_backend_delete SKIPPED [ 21%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_backend_delete_nothing SKIPPED [ 21%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_backend_get_nothing SKIPPED [ 21%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_backend_set_get_value SKIPPED [ 21%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_decorated_fn_functionality SKIPPED [ 22%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_exploding_value_fn SKIPPED [ 22%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_creator SKIPPED [ 22%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_delete SKIPPED [ 22%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_delete_multiple SKIPPED [ 22%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_get_empty_multiple SKIPPED [ 22%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_get_multiple_values SKIPPED [ 22%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_get_nothing_multiple SKIPPED [ 22%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 22%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_get_zero_multiple_values SKIPPED [ 23%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_is_key_locked SKIPPED [ 23%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_set_get_nothing SKIPPED [ 23%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_set_get_value SKIPPED [ 23%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_set_multiple_values SKIPPED [ 23%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_set_zero_multiple_values SKIPPED [ 23%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 23%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_uses_deserializer SKIPPED [ 23%]
+tests/cache/test_memcached_backend.py::PylibmcSerializerTest::test_uses_serializer SKIPPED [ 24%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_backend_delete SKIPPED [ 24%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_backend_delete_nothing SKIPPED [ 24%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_backend_get_nothing SKIPPED [ 24%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_backend_set_get_value SKIPPED [ 24%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_decorated_fn_functionality SKIPPED [ 24%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_exploding_value_fn SKIPPED [ 24%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_creator SKIPPED [ 24%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_delete SKIPPED [ 25%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_delete_multiple SKIPPED [ 25%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_get_empty_multiple SKIPPED [ 25%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_get_multiple_values SKIPPED [ 25%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_get_nothing_multiple SKIPPED [ 25%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 25%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_get_zero_multiple_values SKIPPED [ 25%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_is_key_locked SKIPPED [ 25%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_set_get_nothing SKIPPED [ 25%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_set_get_value SKIPPED [ 26%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_set_multiple_values SKIPPED [ 26%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_set_zero_multiple_values SKIPPED [ 26%]
+tests/cache/test_memcached_backend.py::BMemcachedTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 26%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_backend_delete SKIPPED [ 26%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_backend_delete_nothing SKIPPED [ 26%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_backend_get_nothing SKIPPED [ 26%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_backend_set_get_value SKIPPED [ 26%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_decorated_fn_functionality SKIPPED [ 27%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_exploding_value_fn SKIPPED [ 27%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_creator SKIPPED [ 27%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_delete SKIPPED [ 27%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_delete_multiple SKIPPED [ 27%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_get_empty_multiple SKIPPED [ 27%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_get_multiple_values SKIPPED [ 27%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_get_nothing_multiple SKIPPED [ 27%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 28%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_get_zero_multiple_values SKIPPED [ 28%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_is_key_locked SKIPPED [ 28%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_set_get_nothing SKIPPED [ 28%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_set_get_value SKIPPED [ 28%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_set_multiple_values SKIPPED [ 28%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_set_zero_multiple_values SKIPPED [ 28%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedWithTimeoutTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 28%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_backend_delete SKIPPED [ 29%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_backend_delete_nothing SKIPPED [ 29%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_backend_get_nothing SKIPPED [ 29%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_backend_set_get_value SKIPPED [ 29%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_decorated_fn_functionality SKIPPED [ 29%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_exploding_value_fn SKIPPED [ 29%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_creator SKIPPED [ 29%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_delete SKIPPED [ 29%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_delete_multiple SKIPPED [ 29%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_get_empty_multiple SKIPPED [ 30%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_get_multiple_values SKIPPED [ 30%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_get_nothing_multiple SKIPPED [ 30%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 30%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_get_zero_multiple_values SKIPPED [ 30%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_is_key_locked SKIPPED [ 30%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_set_get_nothing SKIPPED [ 30%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_set_get_value SKIPPED [ 30%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_set_multiple_values SKIPPED [ 31%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_set_zero_multiple_values SKIPPED [ 31%]
+tests/cache/test_memcached_backend.py::BMemcachedTLSTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 31%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_backend_delete SKIPPED [ 31%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_backend_delete_nothing SKIPPED [ 31%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_backend_get_nothing SKIPPED [ 31%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_backend_set_get_value SKIPPED [ 31%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_decorated_fn_functionality SKIPPED [ 31%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_exploding_value_fn SKIPPED [ 32%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_creator SKIPPED [ 32%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_delete SKIPPED [ 32%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_delete_multiple SKIPPED [ 32%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_get_empty_multiple SKIPPED [ 32%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_get_multiple_values SKIPPED [ 32%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_get_nothing_multiple SKIPPED [ 32%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 32%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_get_zero_multiple_values SKIPPED [ 33%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_is_key_locked SKIPPED [ 33%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_set_get_nothing SKIPPED [ 33%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_set_get_value SKIPPED [ 33%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_set_multiple_values SKIPPED [ 33%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_set_zero_multiple_values SKIPPED [ 33%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 33%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedMutexTest::test_mutex SKIPPED [ 33%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedMutexTest::test_mutex_reentrant_across_keys SKIPPED [ 33%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedMutexTest::test_reentrant_dogpile SKIPPED [ 34%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedMutexTest::test_subclass_match SKIPPED [ 34%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedMutexWithTimeoutTest::test_mutex SKIPPED [ 34%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedMutexWithTimeoutTest::test_mutex_reentrant_across_keys SKIPPED [ 34%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedMutexWithTimeoutTest::test_reentrant_dogpile SKIPPED [ 34%]
+tests/cache/test_memcached_backend.py::BMemcachedDistributedMutexWithTimeoutTest::test_subclass_match SKIPPED [ 34%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_backend_delete SKIPPED [ 34%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_backend_delete_nothing SKIPPED [ 34%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_backend_get_nothing SKIPPED [ 35%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_backend_set_get_value SKIPPED [ 35%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_decorated_fn_functionality SKIPPED [ 35%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_exploding_value_fn SKIPPED [ 35%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_creator SKIPPED [ 35%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_delete SKIPPED [ 35%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_delete_multiple SKIPPED [ 35%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_get_empty_multiple SKIPPED [ 35%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_get_multiple_values SKIPPED [ 36%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_get_nothing_multiple SKIPPED [ 36%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 36%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_get_zero_multiple_values SKIPPED [ 36%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_is_key_locked SKIPPED [ 36%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_set_get_nothing SKIPPED [ 36%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_set_get_value SKIPPED [ 36%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_set_multiple_values SKIPPED [ 36%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_set_zero_multiple_values SKIPPED [ 37%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 37%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_uses_deserializer SKIPPED [ 37%]
+tests/cache/test_memcached_backend.py::BMemcachedSerializerTest::test_uses_serializer SKIPPED [ 37%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_backend_delete SKIPPED [ 37%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_backend_delete_nothing SKIPPED [ 37%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_backend_get_nothing SKIPPED [ 37%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_backend_set_get_value SKIPPED [ 37%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_decorated_fn_functionality SKIPPED [ 37%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_exploding_value_fn SKIPPED [ 38%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_pymemcache_enable_retry_client_not_set SKIPPED [ 38%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_creator SKIPPED [ 38%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_delete SKIPPED [ 38%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_delete_multiple SKIPPED [ 38%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_get_empty_multiple SKIPPED [ 38%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_get_multiple_values SKIPPED [ 38%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_get_nothing_multiple SKIPPED [ 38%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 39%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_get_zero_multiple_values SKIPPED [ 39%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_is_key_locked SKIPPED [ 39%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_set_get_nothing SKIPPED [ 39%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_set_get_value SKIPPED [ 39%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_set_multiple_values SKIPPED [ 39%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_set_zero_multiple_values SKIPPED [ 39%]
+tests/cache/test_memcached_backend.py::PyMemcacheTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 39%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_backend_delete SKIPPED [ 40%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_backend_delete_nothing SKIPPED [ 40%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_backend_get_nothing SKIPPED [ 40%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_backend_set_get_value SKIPPED [ 40%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_decorated_fn_functionality SKIPPED [ 40%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_exploding_value_fn SKIPPED [ 40%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_creator SKIPPED [ 40%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_delete SKIPPED [ 40%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_delete_multiple SKIPPED [ 40%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_get_empty_multiple SKIPPED [ 41%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_get_multiple_values SKIPPED [ 41%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_get_nothing_multiple SKIPPED [ 41%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 41%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_get_zero_multiple_values SKIPPED [ 41%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_is_key_locked SKIPPED [ 41%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_set_get_nothing SKIPPED [ 41%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_set_get_value SKIPPED [ 41%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_set_multiple_values SKIPPED [ 42%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_set_zero_multiple_values SKIPPED [ 42%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedWithTimeoutTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 42%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_backend_delete SKIPPED [ 42%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_backend_delete_nothing SKIPPED [ 42%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_backend_get_nothing SKIPPED [ 42%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_backend_set_get_value SKIPPED [ 42%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_decorated_fn_functionality SKIPPED [ 42%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_exploding_value_fn SKIPPED [ 43%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_creator SKIPPED [ 43%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_delete SKIPPED [ 43%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_delete_multiple SKIPPED [ 43%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_get_empty_multiple SKIPPED [ 43%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_get_multiple_values SKIPPED [ 43%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_get_nothing_multiple SKIPPED [ 43%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 43%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_get_zero_multiple_values SKIPPED [ 44%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_is_key_locked SKIPPED [ 44%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_set_get_nothing SKIPPED [ 44%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_set_get_value SKIPPED [ 44%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_set_multiple_values SKIPPED [ 44%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_set_zero_multiple_values SKIPPED [ 44%]
+tests/cache/test_memcached_backend.py::PyMemcacheTLSTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 44%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_backend_delete SKIPPED [ 44%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_backend_delete_nothing SKIPPED [ 44%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_backend_get_nothing SKIPPED [ 45%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_backend_set_get_value SKIPPED [ 45%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_decorated_fn_functionality SKIPPED [ 45%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_exploding_value_fn SKIPPED [ 45%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_creator SKIPPED [ 45%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_delete SKIPPED [ 45%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_delete_multiple SKIPPED [ 45%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_get_empty_multiple SKIPPED [ 45%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_get_multiple_values SKIPPED [ 46%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_get_nothing_multiple SKIPPED [ 46%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 46%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_get_zero_multiple_values SKIPPED [ 46%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_is_key_locked SKIPPED [ 46%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_set_get_nothing SKIPPED [ 46%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_set_get_value SKIPPED [ 46%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_set_multiple_values SKIPPED [ 46%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_set_zero_multiple_values SKIPPED [ 47%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 47%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedMutexTest::test_mutex SKIPPED [ 47%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedMutexTest::test_mutex_reentrant_across_keys SKIPPED [ 47%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedMutexTest::test_reentrant_dogpile SKIPPED [ 47%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedMutexTest::test_subclass_match SKIPPED [ 47%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedMutexWithTimeoutTest::test_mutex SKIPPED [ 47%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedMutexWithTimeoutTest::test_mutex_reentrant_across_keys SKIPPED [ 47%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedMutexWithTimeoutTest::test_reentrant_dogpile SKIPPED [ 48%]
+tests/cache/test_memcached_backend.py::PyMemcacheDistributedMutexWithTimeoutTest::test_subclass_match SKIPPED [ 48%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_backend_delete SKIPPED [ 48%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_backend_delete_nothing SKIPPED [ 48%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_backend_get_nothing SKIPPED [ 48%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_backend_set_get_value SKIPPED [ 48%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_decorated_fn_functionality SKIPPED [ 48%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_exploding_value_fn SKIPPED [ 48%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_creator SKIPPED [ 48%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_delete SKIPPED [ 49%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_delete_multiple SKIPPED [ 49%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_get_empty_multiple SKIPPED [ 49%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_get_multiple_values SKIPPED [ 49%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_get_nothing_multiple SKIPPED [ 49%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 49%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_get_zero_multiple_values SKIPPED [ 49%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_is_key_locked SKIPPED [ 49%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_set_get_nothing SKIPPED [ 50%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_set_get_value SKIPPED [ 50%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_set_multiple_values SKIPPED [ 50%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_set_zero_multiple_values SKIPPED [ 50%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 50%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_uses_deserializer SKIPPED [ 50%]
+tests/cache/test_memcached_backend.py::PyMemcacheSerializerTest::test_uses_serializer SKIPPED [ 50%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_backend_delete SKIPPED [ 50%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_backend_delete_nothing SKIPPED [ 51%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_backend_get_nothing SKIPPED [ 51%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_backend_set_get_value SKIPPED [ 51%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_decorated_fn_functionality SKIPPED [ 51%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_exploding_value_fn SKIPPED [ 51%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_creator SKIPPED [ 51%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_delete SKIPPED [ 51%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_delete_multiple SKIPPED [ 51%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_get_empty_multiple SKIPPED [ 51%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_get_multiple_values SKIPPED [ 52%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_get_nothing_multiple SKIPPED [ 52%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 52%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_get_zero_multiple_values SKIPPED [ 52%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_is_key_locked SKIPPED [ 52%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_set_get_nothing SKIPPED [ 52%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_set_get_value SKIPPED [ 52%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_set_multiple_values SKIPPED [ 52%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_set_zero_multiple_values SKIPPED [ 53%]
+tests/cache/test_memcached_backend.py::PyMemcacheRetryTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 53%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_backend_delete SKIPPED [ 53%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_backend_delete_nothing SKIPPED [ 53%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_backend_get_nothing SKIPPED [ 53%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_backend_set_get_value SKIPPED [ 53%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_decorated_fn_functionality SKIPPED [ 53%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_exploding_value_fn SKIPPED [ 53%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_creator SKIPPED [ 54%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_delete SKIPPED [ 54%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_delete_multiple SKIPPED [ 54%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_get_empty_multiple SKIPPED [ 54%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_get_multiple_values SKIPPED [ 54%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_get_nothing_multiple SKIPPED [ 54%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 54%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_get_zero_multiple_values SKIPPED [ 54%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_is_key_locked SKIPPED [ 55%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_set_get_nothing SKIPPED [ 55%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_set_get_value SKIPPED [ 55%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_set_multiple_values SKIPPED [ 55%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_set_zero_multiple_values SKIPPED [ 55%]
+tests/cache/test_memcached_backend.py::MemcachedTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 55%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_backend_delete SKIPPED [ 55%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_backend_delete_nothing SKIPPED [ 55%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_backend_get_nothing SKIPPED [ 55%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_backend_set_get_value SKIPPED [ 56%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_decorated_fn_functionality SKIPPED [ 56%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_exploding_value_fn SKIPPED [ 56%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_creator SKIPPED [ 56%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_delete SKIPPED [ 56%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_delete_multiple SKIPPED [ 56%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_get_empty_multiple SKIPPED [ 56%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_get_multiple_values SKIPPED [ 56%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_get_nothing_multiple SKIPPED [ 57%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 57%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_get_zero_multiple_values SKIPPED [ 57%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_is_key_locked SKIPPED [ 57%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_set_get_nothing SKIPPED [ 57%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_set_get_value SKIPPED [ 57%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_set_multiple_values SKIPPED [ 57%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_set_zero_multiple_values SKIPPED [ 57%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 58%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedMutexTest::test_mutex SKIPPED [ 58%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedMutexTest::test_mutex_reentrant_across_keys SKIPPED [ 58%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedMutexTest::test_reentrant_dogpile SKIPPED [ 58%]
+tests/cache/test_memcached_backend.py::MemcachedDistributedMutexTest::test_subclass_match SKIPPED [ 58%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_backend_delete SKIPPED [ 58%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_backend_delete_nothing SKIPPED [ 58%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_backend_get_nothing SKIPPED [ 58%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_backend_set_get_value SKIPPED [ 59%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_decorated_fn_functionality SKIPPED [ 59%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_exploding_value_fn SKIPPED [ 59%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_creator SKIPPED [ 59%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_delete SKIPPED [ 59%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_delete_multiple SKIPPED [ 59%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_get_empty_multiple SKIPPED [ 59%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_get_multiple_values SKIPPED [ 59%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_get_nothing_multiple SKIPPED [ 59%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 60%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_get_zero_multiple_values SKIPPED [ 60%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_is_key_locked SKIPPED [ 60%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_set_get_nothing SKIPPED [ 60%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_set_get_value SKIPPED [ 60%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_set_multiple_values SKIPPED [ 60%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_set_zero_multiple_values SKIPPED [ 60%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 60%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_uses_deserializer SKIPPED [ 61%]
+tests/cache/test_memcached_backend.py::MemcachedSerializerTest::test_uses_serializer SKIPPED [ 61%]
+tests/cache/test_memcached_backend.py::PylibmcArgsTest::test_behaviors PASSED [ 61%]
+tests/cache/test_memcached_backend.py::PylibmcArgsTest::test_binary_flag PASSED [ 61%]
+tests/cache/test_memcached_backend.py::PylibmcArgsTest::test_no_set_args PASSED [ 61%]
+tests/cache/test_memcached_backend.py::PylibmcArgsTest::test_set_min_compress_len PASSED [ 61%]
+tests/cache/test_memcached_backend.py::PylibmcArgsTest::test_set_time PASSED [ 61%]
+tests/cache/test_memcached_backend.py::PylibmcArgsTest::test_url_list PASSED [ 61%]
+tests/cache/test_memcached_backend.py::PylibmcArgsTest::test_url_scalar PASSED [ 62%]
+tests/cache/test_memcached_backend.py::MemcachedArgstest::test_set_min_compress_len PASSED [ 62%]
+tests/cache/test_memcached_backend.py::MemcachedArgstest::test_set_time PASSED [ 62%]
+tests/cache/test_memcached_backend.py::LocalThreadTest::test_client_cleanup_1 PASSED [ 62%]
+tests/cache/test_memcached_backend.py::LocalThreadTest::test_client_cleanup_10 PASSED [ 62%]
+tests/cache/test_memcached_backend.py::LocalThreadTest::test_client_cleanup_3 PASSED [ 62%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_backend_delete PASSED [ 62%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_backend_delete_nothing PASSED [ 62%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_backend_get_nothing PASSED [ 62%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_backend_set_get_value PASSED [ 63%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_decorated_fn_functionality PASSED [ 63%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_exploding_value_fn PASSED [ 63%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_creator PASSED [ 63%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_delete PASSED [ 63%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_delete_multiple PASSED [ 63%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_get_empty_multiple PASSED [ 63%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_get_multiple_values PASSED [ 63%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_get_nothing_multiple PASSED [ 64%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_get_or_create_multi_w_should_cache_none PASSED [ 64%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_get_zero_multiple_values PASSED [ 64%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_is_key_locked PASSED [ 64%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_set_get_nothing PASSED [ 64%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_set_get_value PASSED [ 64%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_set_multiple_values PASSED [ 64%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_set_zero_multiple_values PASSED [ 64%]
+tests/cache/test_memory_backend.py::MemoryBackendTest::test_region_set_zero_multiple_values_w_decorator PASSED [ 65%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_backend_delete PASSED [ 65%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_backend_delete_nothing PASSED [ 65%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_backend_get_nothing PASSED [ 65%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_backend_set_get_value PASSED [ 65%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_decorated_fn_functionality PASSED [ 65%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_exploding_value_fn PASSED [ 65%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_creator PASSED [ 65%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_delete PASSED [ 66%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_delete_multiple PASSED [ 66%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_get_empty_multiple PASSED [ 66%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_get_multiple_values PASSED [ 66%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_get_nothing_multiple PASSED [ 66%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_get_or_create_multi_w_should_cache_none PASSED [ 66%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_get_zero_multiple_values PASSED [ 66%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_is_key_locked PASSED [ 66%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_set_get_nothing PASSED [ 66%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_set_get_value PASSED [ 67%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_set_multiple_values PASSED [ 67%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_set_zero_multiple_values PASSED [ 67%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_region_set_zero_multiple_values_w_decorator PASSED [ 67%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_uses_deserializer PASSED [ 67%]
+tests/cache/test_memory_backend.py::MemoryBackendSerializerTest::test_uses_serializer PASSED [ 67%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_backend_delete PASSED [ 67%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_backend_delete_nothing PASSED [ 67%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_backend_get_nothing PASSED [ 68%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_backend_set_get_value PASSED [ 68%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_decorated_fn_functionality PASSED [ 68%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_exploding_value_fn PASSED [ 68%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_creator PASSED [ 68%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_delete PASSED [ 68%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_delete_multiple PASSED [ 68%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_get_empty_multiple PASSED [ 68%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_get_multiple_values PASSED [ 69%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_get_nothing_multiple PASSED [ 69%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_get_or_create_multi_w_should_cache_none PASSED [ 69%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_get_zero_multiple_values PASSED [ 69%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_is_key_locked PASSED [ 69%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_set_get_nothing PASSED [ 69%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_set_get_value PASSED [ 69%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_set_multiple_values PASSED [ 69%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_set_zero_multiple_values PASSED [ 70%]
+tests/cache/test_memory_backend.py::MemoryPickleBackendTest::test_region_set_zero_multiple_values_w_decorator PASSED [ 70%]
+tests/cache/test_null_backend.py::NullBackendTest::test_decorator PASSED [ 70%]
+tests/cache/test_null_backend.py::NullBackendTest::test_delete PASSED    [ 70%]
+tests/cache/test_null_backend.py::NullBackendTest::test_delete_multi PASSED [ 70%]
+tests/cache/test_null_backend.py::NullBackendTest::test_get PASSED       [ 70%]
+tests/cache/test_null_backend.py::NullBackendTest::test_get_multi PASSED [ 70%]
+tests/cache/test_null_backend.py::NullBackendTest::test_mutex PASSED     [ 70%]
+tests/cache/test_null_backend.py::NullBackendTest::test_mutex_doesnt_actually_lock PASSED [ 70%]
+tests/cache/test_null_backend.py::NullBackendTest::test_set PASSED       [ 71%]
+tests/cache/test_null_backend.py::NullBackendTest::test_set_multi PASSED [ 71%]
+tests/cache/test_redis_backend.py::RedisTest::test_backend_delete SKIPPED [ 71%]
+tests/cache/test_redis_backend.py::RedisTest::test_backend_delete_nothing SKIPPED [ 71%]
+tests/cache/test_redis_backend.py::RedisTest::test_backend_get_nothing SKIPPED [ 71%]
+tests/cache/test_redis_backend.py::RedisTest::test_backend_set_get_value SKIPPED [ 71%]
+tests/cache/test_redis_backend.py::RedisTest::test_decorated_fn_functionality SKIPPED [ 71%]
+tests/cache/test_redis_backend.py::RedisTest::test_exploding_value_fn SKIPPED [ 71%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_creator SKIPPED [ 72%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_delete SKIPPED [ 72%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_delete_multiple SKIPPED [ 72%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_get_empty_multiple SKIPPED [ 72%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_get_multiple_values SKIPPED [ 72%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_get_nothing_multiple SKIPPED [ 72%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 72%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_get_zero_multiple_values SKIPPED [ 72%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_is_key_locked SKIPPED [ 73%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_set_get_nothing SKIPPED [ 73%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_set_get_value SKIPPED [ 73%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_set_multiple_values SKIPPED [ 73%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_set_zero_multiple_values SKIPPED [ 73%]
+tests/cache/test_redis_backend.py::RedisTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 73%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_backend_delete SKIPPED [ 73%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_backend_delete_nothing SKIPPED [ 73%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_backend_get_nothing SKIPPED [ 74%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_backend_set_get_value SKIPPED [ 74%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_decorated_fn_functionality SKIPPED [ 74%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_exploding_value_fn SKIPPED [ 74%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_creator SKIPPED [ 74%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_delete SKIPPED [ 74%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_delete_multiple SKIPPED [ 74%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_get_empty_multiple SKIPPED [ 74%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_get_multiple_values SKIPPED [ 74%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_get_nothing_multiple SKIPPED [ 75%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 75%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_get_zero_multiple_values SKIPPED [ 75%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_is_key_locked SKIPPED [ 75%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_set_get_nothing SKIPPED [ 75%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_set_get_value SKIPPED [ 75%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_set_multiple_values SKIPPED [ 75%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_set_zero_multiple_values SKIPPED [ 75%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 76%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_uses_deserializer SKIPPED [ 76%]
+tests/cache/test_redis_backend.py::RedisSerializerTest::test_uses_serializer SKIPPED [ 76%]
+tests/cache/test_redis_backend.py::RedisDistributedMutexTest::test_mutex SKIPPED [ 76%]
+tests/cache/test_redis_backend.py::RedisDistributedMutexTest::test_mutex_reentrant_across_keys SKIPPED [ 76%]
+tests/cache/test_redis_backend.py::RedisDistributedMutexTest::test_reentrant_dogpile SKIPPED [ 76%]
+tests/cache/test_redis_backend.py::RedisDistributedMutexTest::test_subclass_match SKIPPED [ 76%]
+tests/cache/test_redis_backend.py::RedisAsyncCreationTest::test_distributed_async_locks SKIPPED [ 76%]
+tests/cache/test_redis_backend.py::RedisConnectionTest::test_connect_with_basics SKIPPED [ 77%]
+tests/cache/test_redis_backend.py::RedisConnectionTest::test_connect_with_connection_pool SKIPPED [ 77%]
+tests/cache/test_redis_backend.py::RedisConnectionTest::test_connect_with_defaults SKIPPED [ 77%]
+tests/cache/test_redis_backend.py::RedisConnectionTest::test_connect_with_password SKIPPED [ 77%]
+tests/cache/test_redis_backend.py::RedisConnectionTest::test_connect_with_socket_timeout SKIPPED [ 77%]
+tests/cache/test_redis_backend.py::RedisConnectionTest::test_connect_with_url SKIPPED [ 77%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_backend_delete SKIPPED [ 77%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_backend_delete_nothing SKIPPED [ 77%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_backend_get_nothing SKIPPED [ 77%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_backend_set_get_value SKIPPED [ 78%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_decorated_fn_functionality SKIPPED [ 78%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_exploding_value_fn SKIPPED [ 78%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_creator SKIPPED [ 78%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_delete SKIPPED [ 78%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_delete_multiple SKIPPED [ 78%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_get_empty_multiple SKIPPED [ 78%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_get_multiple_values SKIPPED [ 78%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_get_nothing_multiple SKIPPED [ 79%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 79%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_get_zero_multiple_values SKIPPED [ 79%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_is_key_locked SKIPPED [ 79%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_set_get_nothing SKIPPED [ 79%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_set_get_value SKIPPED [ 79%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_set_multiple_values SKIPPED [ 79%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_set_zero_multiple_values SKIPPED [ 79%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 80%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_backend_delete SKIPPED [ 80%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_backend_delete_nothing SKIPPED [ 80%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_backend_get_nothing SKIPPED [ 80%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_backend_set_get_value SKIPPED [ 80%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_decorated_fn_functionality SKIPPED [ 80%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_exploding_value_fn SKIPPED [ 80%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_creator SKIPPED [ 80%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_delete SKIPPED [ 81%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_delete_multiple SKIPPED [ 81%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_get_empty_multiple SKIPPED [ 81%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_get_multiple_values SKIPPED [ 81%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_get_nothing_multiple SKIPPED [ 81%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_get_or_create_multi_w_should_cache_none SKIPPED [ 81%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_get_zero_multiple_values SKIPPED [ 81%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_is_key_locked SKIPPED [ 81%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_set_get_nothing SKIPPED [ 81%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_set_get_value SKIPPED [ 82%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_set_multiple_values SKIPPED [ 82%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_set_zero_multiple_values SKIPPED [ 82%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_region_set_zero_multiple_values_w_decorator SKIPPED [ 82%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_uses_deserializer SKIPPED [ 82%]
+tests/cache/test_redis_sentinel_backend.py::RedisSerializerTest::test_uses_serializer SKIPPED [ 82%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelDistributedMutexTest::test_mutex SKIPPED [ 82%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelDistributedMutexTest::test_mutex_reentrant_across_keys SKIPPED [ 82%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelDistributedMutexTest::test_reentrant_dogpile SKIPPED [ 83%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelDistributedMutexTest::test_subclass_match SKIPPED [ 83%]
+tests/cache/test_redis_sentinel_backend.py::RedisSentinelAsyncCreationTest::test_distributed_async_locks SKIPPED [ 83%]
+tests/cache/test_region.py::APITest::test_no_value_str PASSED            [ 83%]
+tests/cache/test_region.py::RegionTest::test_creator PASSED              [ 83%]
+tests/cache/test_region.py::RegionTest::test_datetime_expiration_time PASSED [ 83%]
+tests/cache/test_region.py::RegionTest::test_dupe_config PASSED          [ 83%]
+tests/cache/test_region.py::RegionTest::test_expire PASSED               [ 83%]
+tests/cache/test_region.py::RegionTest::test_expire_multi PASSED         [ 84%]
+tests/cache/test_region.py::RegionTest::test_expire_on_get PASSED        [ 84%]
+tests/cache/test_region.py::RegionTest::test_expire_override PASSED      [ 84%]
+tests/cache/test_region.py::RegionTest::test_hard_invalidate_get PASSED  [ 84%]
+tests/cache/test_region.py::RegionTest::test_hard_invalidate_get_or_create FAILED [ 84%]
+tests/cache/test_region.py::RegionTest::test_hard_invalidate_get_or_create_multi FAILED [ 84%]
+tests/cache/test_region.py::RegionTest::test_ignore_expire_on_get PASSED [ 84%]
+tests/cache/test_region.py::RegionTest::test_instance_from_config_string PASSED [ 84%]
+tests/cache/test_region.py::RegionTest::test_instance_from_dict PASSED   [ 85%]
+tests/cache/test_region.py::RegionTest::test_invalid_backend PASSED      [ 85%]
+tests/cache/test_region.py::RegionTest::test_key_is_locked PASSED        [ 85%]
+tests/cache/test_region.py::RegionTest::test_key_mangler_argument PASSED [ 85%]
+tests/cache/test_region.py::RegionTest::test_key_mangler_impl PASSED     [ 85%]
+tests/cache/test_region.py::RegionTest::test_multi_creator PASSED        [ 85%]
+tests/cache/test_region.py::RegionTest::test_no_config PASSED            [ 85%]
+tests/cache/test_region.py::RegionTest::test_override_expire_on_get PASSED [ 85%]
+tests/cache/test_region.py::RegionTest::test_reject_invalid_expiration_time PASSED [ 85%]
+tests/cache/test_region.py::RegionTest::test_remove PASSED               [ 86%]
+tests/cache/test_region.py::RegionTest::test_replace_backend_config PASSED [ 86%]
+tests/cache/test_region.py::RegionTest::test_replace_backend_config_with_custom_key_mangler PASSED [ 86%]
+tests/cache/test_region.py::RegionTest::test_set_get_nothing PASSED      [ 86%]
+tests/cache/test_region.py::RegionTest::test_set_get_value PASSED        [ 86%]
+tests/cache/test_region.py::RegionTest::test_set_name PASSED             [ 86%]
+tests/cache/test_region.py::RegionTest::test_should_cache_fn PASSED      [ 86%]
+tests/cache/test_region.py::RegionTest::test_should_cache_fn_multi PASSED [ 86%]
+tests/cache/test_region.py::RegionTest::test_should_delete_multiple_values PASSED [ 87%]
+tests/cache/test_region.py::RegionTest::test_should_get_multiple_values PASSED [ 87%]
+tests/cache/test_region.py::RegionTest::test_should_set_multiple_values PASSED [ 87%]
+tests/cache/test_region.py::RegionTest::test_soft_invalidate_get PASSED  [ 87%]
+tests/cache/test_region.py::RegionTest::test_soft_invalidate_get_or_create PASSED [ 87%]
+tests/cache/test_region.py::RegionTest::test_soft_invalidate_get_or_create_multi PASSED [ 87%]
+tests/cache/test_region.py::RegionTest::test_soft_invalidate_requires_expire_time_get_first_call PASSED [ 87%]
+tests/cache/test_region.py::RegionTest::test_soft_invalidate_requires_expire_time_get_multi_first_call PASSED [ 87%]
+tests/cache/test_region.py::RegionTest::test_soft_invalidate_requires_expire_time_get_multi_second_call FAILED [ 88%]
+tests/cache/test_region.py::RegionTest::test_soft_invalidate_requires_expire_time_get_second_call FAILED [ 88%]
+tests/cache/test_region.py::ProxyRegionTest::test_creator PASSED         [ 88%]
+tests/cache/test_region.py::ProxyRegionTest::test_datetime_expiration_time PASSED [ 88%]
+tests/cache/test_region.py::ProxyRegionTest::test_dupe_config PASSED     [ 88%]
+tests/cache/test_region.py::ProxyRegionTest::test_expire PASSED          [ 88%]
+tests/cache/test_region.py::ProxyRegionTest::test_expire_multi PASSED    [ 88%]
+tests/cache/test_region.py::ProxyRegionTest::test_expire_on_get PASSED   [ 88%]
+tests/cache/test_region.py::ProxyRegionTest::test_expire_override PASSED [ 88%]
+tests/cache/test_region.py::ProxyRegionTest::test_hard_invalidate_get PASSED [ 89%]
+tests/cache/test_region.py::ProxyRegionTest::test_hard_invalidate_get_or_create FAILED [ 89%]
+tests/cache/test_region.py::ProxyRegionTest::test_hard_invalidate_get_or_create_multi FAILED [ 89%]
+tests/cache/test_region.py::ProxyRegionTest::test_ignore_expire_on_get PASSED [ 89%]
+tests/cache/test_region.py::ProxyRegionTest::test_instance_from_config_string PASSED [ 89%]
+tests/cache/test_region.py::ProxyRegionTest::test_instance_from_dict PASSED [ 89%]
+tests/cache/test_region.py::ProxyRegionTest::test_invalid_backend PASSED [ 89%]
+tests/cache/test_region.py::ProxyRegionTest::test_key_is_locked PASSED   [ 89%]
+tests/cache/test_region.py::ProxyRegionTest::test_key_mangler_argument PASSED [ 90%]
+tests/cache/test_region.py::ProxyRegionTest::test_key_mangler_impl PASSED [ 90%]
+tests/cache/test_region.py::ProxyRegionTest::test_multi_creator PASSED   [ 90%]
+tests/cache/test_region.py::ProxyRegionTest::test_no_config PASSED       [ 90%]
+tests/cache/test_region.py::ProxyRegionTest::test_override_expire_on_get PASSED [ 90%]
+tests/cache/test_region.py::ProxyRegionTest::test_reject_invalid_expiration_time PASSED [ 90%]
+tests/cache/test_region.py::ProxyRegionTest::test_remove PASSED          [ 90%]
+tests/cache/test_region.py::ProxyRegionTest::test_replace_backend_config PASSED [ 90%]
+tests/cache/test_region.py::ProxyRegionTest::test_replace_backend_config_with_custom_key_mangler PASSED [ 91%]
+tests/cache/test_region.py::ProxyRegionTest::test_set_get_nothing PASSED [ 91%]
+tests/cache/test_region.py::ProxyRegionTest::test_set_get_value PASSED   [ 91%]
+tests/cache/test_region.py::ProxyRegionTest::test_set_name PASSED        [ 91%]
+tests/cache/test_region.py::ProxyRegionTest::test_should_cache_fn PASSED [ 91%]
+tests/cache/test_region.py::ProxyRegionTest::test_should_cache_fn_multi PASSED [ 91%]
+tests/cache/test_region.py::ProxyRegionTest::test_should_delete_multiple_values PASSED [ 91%]
+tests/cache/test_region.py::ProxyRegionTest::test_should_get_multiple_values PASSED [ 91%]
+tests/cache/test_region.py::ProxyRegionTest::test_should_set_multiple_values PASSED [ 92%]
+tests/cache/test_region.py::ProxyRegionTest::test_soft_invalidate_get PASSED [ 92%]
+tests/cache/test_region.py::ProxyRegionTest::test_soft_invalidate_get_or_create PASSED [ 92%]
+tests/cache/test_region.py::ProxyRegionTest::test_soft_invalidate_get_or_create_multi PASSED [ 92%]
+tests/cache/test_region.py::ProxyRegionTest::test_soft_invalidate_requires_expire_time_get_first_call PASSED [ 92%]
+tests/cache/test_region.py::ProxyRegionTest::test_soft_invalidate_requires_expire_time_get_multi_first_call PASSED [ 92%]
+tests/cache/test_region.py::ProxyRegionTest::test_soft_invalidate_requires_expire_time_get_multi_second_call FAILED [ 92%]
+tests/cache/test_region.py::ProxyRegionTest::test_soft_invalidate_requires_expire_time_get_second_call FAILED [ 92%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_creator PASSED [ 92%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_datetime_expiration_time PASSED [ 93%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_dupe_config PASSED [ 93%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_expire PASSED [ 93%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_expire_multi PASSED [ 93%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_expire_on_get PASSED [ 93%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_expire_override PASSED [ 93%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_hard_invalidate_get PASSED [ 93%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_hard_invalidate_get_or_create FAILED [ 93%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_hard_invalidate_get_or_create_multi FAILED [ 94%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_ignore_expire_on_get PASSED [ 94%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_instance_from_config_string PASSED [ 94%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_instance_from_dict PASSED [ 94%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_invalid_backend PASSED [ 94%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_key_is_locked PASSED [ 94%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_key_mangler_argument PASSED [ 94%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_key_mangler_impl PASSED [ 94%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_multi_creator PASSED [ 95%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_no_config PASSED [ 95%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_override_expire_on_get PASSED [ 95%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_reject_invalid_expiration_time PASSED [ 95%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_remove PASSED [ 95%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_replace_backend_config PASSED [ 95%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_replace_backend_config_with_custom_key_mangler PASSED [ 95%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_set_get_nothing PASSED [ 95%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_set_get_value PASSED [ 96%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_set_name PASSED [ 96%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_should_cache_fn PASSED [ 96%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_should_cache_fn_multi PASSED [ 96%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_should_delete_multiple_values PASSED [ 96%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_should_get_multiple_values PASSED [ 96%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_should_set_multiple_values PASSED [ 96%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_soft_invalidate_get PASSED [ 96%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_soft_invalidate_get_or_create PASSED [ 96%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_soft_invalidate_get_or_create_multi PASSED [ 97%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_soft_invalidate_requires_expire_time_get_first_call PASSED [ 97%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_soft_invalidate_requires_expire_time_get_multi_first_call PASSED [ 97%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_soft_invalidate_requires_expire_time_get_multi_second_call FAILED [ 97%]
+tests/cache/test_region.py::CustomInvalidationStrategyTest::test_soft_invalidate_requires_expire_time_get_second_call FAILED [ 97%]
+tests/cache/test_region.py::MutexAPITest::test_mutex_match PASSED        [ 97%]
+tests/cache/test_region.py::MutexAPITest::test_mutex_non_match PASSED    [ 97%]
+tests/cache/test_region.py::AsyncCreatorTest::test_fn_decorator FAILED   [ 97%]
+tests/cache/test_region.py::AsyncCreatorTest::test_fn_decorator_with_kw PASSED [ 98%]
+tests/cache/test_region.py::AsyncCreatorTest::test_get_or_create PASSED  [ 98%]
+tests/cache/test_region.py::ProxyBackendTest::test_actual_backend_noproxy PASSED [ 98%]
+tests/cache/test_region.py::ProxyBackendTest::test_actual_backend_proxied PASSED [ 98%]
+tests/cache/test_region.py::ProxyBackendTest::test_argument_proxies PASSED [ 98%]
+tests/cache/test_region.py::ProxyBackendTest::test_cachedvalue_passed PASSED [ 98%]
+tests/cache/test_region.py::ProxyBackendTest::test_counter_proxies PASSED [ 98%]
+tests/cache/test_region.py::ProxyBackendTest::test_instance_proxies PASSED [ 98%]
+tests/cache/test_region.py::LoggingTest::test_log_is_cache_miss PASSED   [ 99%]
+tests/cache/test_region.py::LoggingTest::test_log_is_hard_invalidated PASSED [ 99%]
+tests/cache/test_region.py::LoggingTest::test_log_is_value_version_miss PASSED [ 99%]
+tests/cache/test_region.py::LoggingTest::test_log_time PASSED            [ 99%]
+tests/cache/test_region.py::LoggingTest::test_repr_obj_truncated PASSED  [ 99%]
+tests/test_backgrounding.py::TestAsyncRunner::test_async_release PASSED  [ 99%]
+tests/test_lock.py::RaceConditionTests::test_no_double_get_on_expired PASSED [ 99%]
+tests/test_utils.py::UtilsTest::test_coerce_string_conf PASSED           [ 99%]
+tests/util/test_nameregistry.py::NameRegistryTest::test_name_registry PASSED [100%]
+
+================================== FAILURES ===================================
+__________________________ MakoTest.test_entry_point __________________________
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_mako.py", line 9, in test_entry_point
+    import pkg_resources
+ModuleNotFoundError: No module named 'pkg_resources'
+________________ RegionTest.test_hard_invalidate_get_or_create ________________
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 334, in test_hard_invalidate_get_or_create
+    eq_(reg.get_or_create("some key", creator), "some value 3")
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 8, in eq_
+    assert a == b, msg or "%r != %r" % (a, b)
+           ^^^^^^
+AssertionError: 'some value 2' != 'some value 3'
+_____________ RegionTest.test_hard_invalidate_get_or_create_multi _____________
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 363, in test_hard_invalidate_get_or_create_multi
+    eq_(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 8, in eq_
+    assert a == b, msg or "%r != %r" % (a, b)
+           ^^^^^^
+AssertionError: ['some value k1 3', 'some value k2 4'] != ['some value k1 5', 'some value k2 6']
+_ RegionTest.test_soft_invalidate_requires_expire_time_get_multi_second_call __
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 449, in test_soft_invalidate_requires_expire_time_get_multi_second_call
+    assert_raises_message(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 24, in assert_raises_message
+    assert False, "Callable did not raise an exception"
+           ^^^^^
+AssertionError: Callable did not raise an exception
+____ RegionTest.test_soft_invalidate_requires_expire_time_get_second_call _____
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 425, in test_soft_invalidate_requires_expire_time_get_second_call
+    assert_raises_message(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 24, in assert_raises_message
+    assert False, "Callable did not raise an exception"
+           ^^^^^
+AssertionError: Callable did not raise an exception
+_____________ ProxyRegionTest.test_hard_invalidate_get_or_create ______________
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 334, in test_hard_invalidate_get_or_create
+    eq_(reg.get_or_create("some key", creator), "some value 3")
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 8, in eq_
+    assert a == b, msg or "%r != %r" % (a, b)
+           ^^^^^^
+AssertionError: 'some value 2' != 'some value 3'
+__________ ProxyRegionTest.test_hard_invalidate_get_or_create_multi ___________
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 363, in test_hard_invalidate_get_or_create_multi
+    eq_(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 8, in eq_
+    assert a == b, msg or "%r != %r" % (a, b)
+           ^^^^^^
+AssertionError: ['some value k1 3', 'some value k2 4'] != ['some value k1 5', 'some value k2 6']
+_ ProxyRegionTest.test_soft_invalidate_requires_expire_time_get_multi_second_call _
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 449, in test_soft_invalidate_requires_expire_time_get_multi_second_call
+    assert_raises_message(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 24, in assert_raises_message
+    assert False, "Callable did not raise an exception"
+           ^^^^^
+AssertionError: Callable did not raise an exception
+__ ProxyRegionTest.test_soft_invalidate_requires_expire_time_get_second_call __
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 425, in test_soft_invalidate_requires_expire_time_get_second_call
+    assert_raises_message(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 24, in assert_raises_message
+    assert False, "Callable did not raise an exception"
+           ^^^^^
+AssertionError: Callable did not raise an exception
+______ CustomInvalidationStrategyTest.test_hard_invalidate_get_or_create ______
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 334, in test_hard_invalidate_get_or_create
+    eq_(reg.get_or_create("some key", creator), "some value 3")
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 8, in eq_
+    assert a == b, msg or "%r != %r" % (a, b)
+           ^^^^^^
+AssertionError: 'some value 2' != 'some value 3'
+___ CustomInvalidationStrategyTest.test_hard_invalidate_get_or_create_multi ___
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 363, in test_hard_invalidate_get_or_create_multi
+    eq_(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 8, in eq_
+    assert a == b, msg or "%r != %r" % (a, b)
+           ^^^^^^
+AssertionError: ['some value k1 3', 'some value k2 4'] != ['some value k1 5', 'some value k2 6']
+_ CustomInvalidationStrategyTest.test_soft_invalidate_requires_expire_time_get_multi_second_call _
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 449, in test_soft_invalidate_requires_expire_time_get_multi_second_call
+    assert_raises_message(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 24, in assert_raises_message
+    assert False, "Callable did not raise an exception"
+           ^^^^^
+AssertionError: Callable did not raise an exception
+_ CustomInvalidationStrategyTest.test_soft_invalidate_requires_expire_time_get_second_call _
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 425, in test_soft_invalidate_requires_expire_time_get_second_call
+    assert_raises_message(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 24, in assert_raises_message
+    assert False, "Callable did not raise an exception"
+           ^^^^^
+AssertionError: Callable did not raise an exception
+_____________________ AsyncCreatorTest.test_fn_decorator ______________________
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "C:\ProgramData\anaconda3\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\test_region.py", line 705, in test_fn_decorator
+    eq_(
+  File "<home>\heldout-projects\dogpile-cache\tests\cache\__init__.py", line 8, in eq_
+    assert a == b, msg or "%r != %r" % (a, b)
+           ^^^^^^
+AssertionError: [call(1, 2), call(3, 4)] != [call(1, 2), call(3, 4), call(1, 2)]
+=========================== short test summary info ===========================
+FAILED tests/cache/test_mako.py::MakoTest::test_entry_point - ModuleNotFoundE...
+FAILED tests/cache/test_region.py::RegionTest::test_hard_invalidate_get_or_create
+FAILED tests/cache/test_region.py::RegionTest::test_hard_invalidate_get_or_create_multi
+FAILED tests/cache/test_region.py::RegionTest::test_soft_invalidate_requires_expire_time_get_multi_second_call
+FAILED tests/cache/test_region.py::RegionTest::test_soft_invalidate_requires_expire_time_get_second_call
+FAILED tests/cache/test_region.py::ProxyRegionTest::test_hard_invalidate_get_or_create
+FAILED tests/cache/test_region.py::ProxyRegionTest::test_hard_invalidate_get_or_create_multi
+FAILED tests/cache/test_region.py::ProxyRegionTest::test_soft_invalidate_requires_expire_time_get_multi_second_call
+FAILED tests/cache/test_region.py::ProxyRegionTest::test_soft_invalidate_requires_expire_time_get_second_call
+FAILED tests/cache/test_region.py::CustomInvalidationStrategyTest::test_hard_invalidate_get_or_create
+FAILED tests/cache/test_region.py::CustomInvalidationStrategyTest::test_hard_invalidate_get_or_create_multi
+FAILED tests/cache/test_region.py::CustomInvalidationStrategyTest::test_soft_invalidate_requires_expire_time_get_multi_second_call
+FAILED tests/cache/test_region.py::CustomInvalidationStrategyTest::test_soft_invalidate_requires_expire_time_get_second_call
+FAILED tests/cache/test_region.py::AsyncCreatorTest::test_fn_decorator - Asse...
+======== 14 failed, 340 passed, 473 skipped, 100 deselected in 36.50s =========
