@@ -16,7 +16,7 @@ Usage:
     python tools/scan_candidates.py --list-categories
     python tools/scan_candidates.py --category "Web Development" --limit 20
     python tools/scan_candidates.py --all --limit 60
-    GITHUB_TOKEN=ghp_... python tools/scan_candidates.py --all --limit 200
+    python tools/scan_candidates.py --all --limit 200 --token-file ~/.github_token
 
 GitHub allows 60 requests an hour without a token and 5000 with one; each
 candidate costs about 3. Without a token the script stops cleanly when the
@@ -51,7 +51,7 @@ CACHE_FILE = HERE / "scan-cache.json"
 AWESOME = "https://raw.githubusercontent.com/vinta/awesome-python/master/README.md"
 BUGSINPY = "https://api.github.com/repos/soarsmu/BugsInPy/contents/projects"
 
-TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+TOKEN: str | None = None
 CUTOFF = datetime(2022, 1, 1, tzinfo=timezone.utc)
 RECENT = datetime.now(timezone.utc) - timedelta(days=730)
 
@@ -85,6 +85,22 @@ CSV_COLUMNS = [
 
 _calls = 0
 _cache: dict = {}
+
+
+def resolve_token(token_file: str | None) -> str | None:
+    """The GitHub token, from --token-file or the environment.
+
+    The file form keeps the token out of shell history and out of any
+    transcript: write it once with
+        printf '%s' ghp_xxx > ~/.github_token
+    and the value is never echoed anywhere.
+    """
+    if token_file:
+        path = Path(token_file).expanduser()
+        if not path.exists():
+            raise SystemExit(f"token file not found: {path}")
+        return path.read_text("utf-8").strip() or None
+    return os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or None
 
 
 # ---------------------------------------------------------------- fetch layer
@@ -399,9 +415,17 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=25,
                         help="stop after this many candidates (default 25)")
     parser.add_argument("--max-budget", type=int, default=55,
-                        help="stop before this many GitHub API calls (default 55)")
+                        help="stop before this many GitHub API calls without a token "
+                             "(default 55; ignored when a token is set)")
+    parser.add_argument("--token-file", default=None,
+                        help="read the GitHub token from this file instead of the "
+                             "GITHUB_TOKEN / GH_TOKEN environment variables")
     args = parser.parse_args()
 
+    global TOKEN
+    TOKEN = resolve_token(args.token_file)
+    if TOKEN:
+        args.max_budget = 5000
     if not TOKEN:
         print("No GITHUB_TOKEN set: about 55 API calls per hour, then the script stops.",
               file=sys.stderr)
