@@ -1,1 +1,5 @@
 id,repo,ref,python,domain,found_in,tried_on,pytest_summary,root_cause_guess,kept,reason
+python-diskcache,grantjenks/python-diskcache,,3.12,Caching,awesome-python: Caching,2026-09-29,,,yes,confirm the tests need no network or paid service; PyPI name unknown - read the tag off the repo's Releases page
+hishel,karpetrosyan/hishel,,3.12,Caching,awesome-python: Caching,2026-09-29,,,yes,confirm the tests need no network or paid service
+dogpile-cache,sqlalchemy/dogpile.cache,1.1.4,3.12,Caching,awesome-python: Caching,2026-09-29,,,yes,confirm the tests need no network or paid service
+django-cacheops,Suor/django-cacheops,6.0,3.12,Caching,awesome-python: Caching,2026-09-29,,,yes,confirm the tests need no network or paid service
